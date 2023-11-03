@@ -3,11 +3,6 @@ $(function () {
 const currentDay = dayjs().format("dddd MMMM, YYYY H:mm")
 const currentHour = dayjs().format("HH")
 const currentHourEl = "hour-" + currentHour;
-const saveBtn = document.getElementById("save")
-const eventEl = document.getElementById("event")
-const enterEl = document.getElementById("entry")
-const submitBtn = document.getElementById("submit")
-  
   
   
   $('#currentDay').text("Todays date is " + currentDay);
@@ -27,11 +22,25 @@ const submitBtn = document.getElementById("submit")
       $(this).removeClass("present");
     }
 
-    
-    
+//setItem to send to local storage. localStorage.setItem("Hour-##", userInput.val())
+//getItem to retrieve and display. localStorage.getItem("Hour")
+//.attr("") is how you access that list...
 
-  //saveBtn.addEventListener("click" saveEvent())
-  
+
+    //want to click the save button and save anything in the text area to local storage.
+    
+    $(".saveBtn").on("click", function(){
+       //this keyword gives you the whole button html information
+      userInput = $("textarea").attr("innerText") //Where the user input is stored.
+      //need to access each time block individually
+
+      //localStorage.setItem("hour", userInput.val())
+
+          })
+
+
+
+
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
