@@ -44,16 +44,14 @@
         code is implemented.
         -->
 
-      <!-- Example of a past time block. The "past" class adds a gray background color. -->
       <section id="hour-09" class="row time-block past">
         <h5 class="col-2 col-md-1 hour text-center py-3">9AM</h5>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </section>
 
-      <!-- Example of a a present time block. The "present" class adds a red background color. -->
       <section id="hour-10" class="row time-block present">
         <h5 class="col-2 col-md-1 hour text-center py-3">10AM</h5>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -62,7 +60,6 @@
         </button>
       </section>
 
-      <!-- Example of a future time block. The "future" class adds a green background color. -->
       <section id="hour-11" class="row time-block future">
         <h5 class="col-2 col-md-1 hour text-center py-3">11AM</h5>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -105,13 +102,6 @@
 
       <section id="hour-16" class="row time-block future">
         <h5 class="col-2 col-md-1 hour text-center py-3">4PM</h5>
-        <form  id="event">
-          <div class="form-group">
-            <label for="scheduleEvent">Event</label>
-            <input type="event" class="form-control" id="scheduleEvent" placeholder="Enter event">
-          </div>
-          <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-        </form>
         <textarea class="col-8 col-md-10 description" rows="3" id="entry"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="save">
           <i class="fas fa-save" aria-hidden="true"></i>
