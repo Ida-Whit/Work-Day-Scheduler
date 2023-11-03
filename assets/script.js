@@ -30,16 +30,18 @@ const currentHourEl = "hour-" + currentHour;
     //want to click the save button and save anything in the text area to local storage.
     
     $(".saveBtn").on("click", function(){
-       //this keyword gives you the whole button html information
-      userInput = $("textarea").attr("innerText") //Where the user input is stored.
+        let parentEl = $(this).parent().attr("id");  //accesses each hour 9 times
+        console.log(parentEl)
+  });
+      
+      //this keyword gives you the whole button html information
+      userInput = $("textarea") //Where the user input is stored.
       //need to access each time block individually
-
       //localStorage.setItem("hour", userInput.val())
 
           })
 
-
-
+  
 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -53,4 +55,3 @@ const currentHourEl = "hour-" + currentHour;
   // attribute of each time-block be used to do this?
   //
 })
-});
