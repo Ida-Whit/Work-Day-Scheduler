@@ -1,14 +1,14 @@
 ## Work-Day-Scheduler
 
 ## Description
-This project is able to take user input
+This program is able to take user input and help with scheduling and organizing a persons day.
 
 
 ## Badges
 N/A
 
 ## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+assets/HomePage.png
 
 ## Installation
 N/A

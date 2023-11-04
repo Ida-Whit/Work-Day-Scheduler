@@ -4,7 +4,10 @@ const currentHour = dayjs().format("HH")
 const currentHourEl = "hour-" + currentHour;
 const savedTasks = JSON.parse(localStorage.getItem("Task")) || [];
 
-  
+//localStorage.removeItem("Task")
+
+
+
 $('#currentDay').text("Todays date is " + currentDay);
   
 $(".time-block").each(function(){
@@ -24,18 +27,24 @@ $(".time-block").each(function(){
 });
  
 $(".saveBtn").on("click", function(){  
-    let parentEl = $(this).parent().attr("id");
+    let timeEl = $(this).parent().attr("id");
     let userInput = $(this).siblings("textarea").val();
-    
-    savedTasks.push({parentEl, userInput})
+    savedTasks.push({timeEl, userInput})
     localStorage.setItem('Task', JSON.stringify(savedTasks));
+   renderTasks()
+});
 
-  });
+   function renderTasks(){
+    $(".description").each(function(){
+      if (savedTasks.timeEl === $(this).parent().attr("id")) {
+        savedTasks.userInput = this.value()
+      }
 
-})
-
-  
+    })
+   };
+     
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
+});
