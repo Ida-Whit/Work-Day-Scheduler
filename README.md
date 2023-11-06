@@ -7,7 +7,7 @@ This program is able to take user input and help with scheduling and organizing 
 N/A
 
 ## Visuals
-assets/HomePage.png
+<img src="assets/HomePage.png">
 
 ## Installation
 N/A
