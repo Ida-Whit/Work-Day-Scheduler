@@ -9,6 +9,9 @@ N/A
 ## Visuals
 <img src="assets/HomePage.png">
 
+Link to site:
+https://ida-whit.github.io/Work-Day-Scheduler/
+
 ## Installation
 N/A
 
